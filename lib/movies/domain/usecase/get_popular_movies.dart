@@ -3,10 +3,10 @@ import 'package:movie_app/movies/domain/repository/base_movie_repository.dart';
 
 import '../entities/movie.dart';
 
-class GetPopularMovies{
+class GetPopularMoviesUseCase{
   BaseMoviesRepository baseMoviesRepository;
 
-  GetPopularMovies(this.baseMoviesRepository);
+  GetPopularMoviesUseCase(this.baseMoviesRepository);
   Future<Either<String, List<Movie>>> execute()async{
    return await baseMoviesRepository.getPopularMovies();
   }

@@ -3,7 +3,6 @@ import 'package:movie_app/movies/data/datasource/movie_remote_data_source.dart';
 import 'package:movie_app/movies/domain/entities/movie.dart';
 import 'package:movie_app/movies/domain/repository/base_movie_repository.dart';
 
-import '../../../core/error/failures.dart';
 
 class MovieRepository extends BaseMoviesRepository{
   BaseMovieRemoteDataSource baseMovieRemoteDataSource;
